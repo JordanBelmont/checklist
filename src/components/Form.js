@@ -36,7 +36,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
             className="todo-button"
             onClick={submitTodoHandler}
          >
-            <i className="fas fa-plus"></i>
+            <i className="fa-solid fa-plus"></i>
          </button>
          <div className="select">
             <select
