@@ -42,3 +42,61 @@ form {
    padding: 2rem;
    align-items: center;
 }
+
+.todo-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.todo-list {
+   min-width: 30%;
+   list-style: none;
+}
+
+.todo-form input {
+   font-family: 'coffee&tea', sans-serif;
+   letter-spacing: 1px;
+   margin: 0px;
+   padding: 0.5rem;
+   font-size: 2rem;
+   border: none;
+   background: white;
+   width: 25%
+}
+
+/*CUSTOM SELECTOR */
+
+.todo-select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   outline: 0;
+   box-shadow: none;
+   border: 0 !important;
+   background-image: none;
+   color: #000000;
+   font-family: 'Poppins', sans-serif;
+   cursor: pointer;
+   width: 11rem;
+   padding: 0.5rem;
+   font-size: 1rem
+}
+
+.select {
+   margin: 1rem;
+   position: relative;
+   overflow: hidden;
+}
+
+.select::after {
+   content: "\25BC";
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0.5rem;
+   color: #000000;
+   cursor: pointer;
+   pointer-events: none;
+}
