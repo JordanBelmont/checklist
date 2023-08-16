@@ -23,7 +23,7 @@ header {
    font-size: 2rem;
    margin: 6rem;
    font-size: 5rem;
-   color: rgb(58, 57, 57);
+   color: #3a3939;
 }
 
 form {
@@ -47,7 +47,7 @@ form input {
    border: none;
    background: white;
    width: 90%;
-   box-shadow: 0 0.5rem 0.2rem black;
+   box-shadow: 0.5rem 0.5rem 0 0 #3a3939;
 }
 
 .todo-button {
@@ -83,7 +83,8 @@ form input {
    justify-content: space-between;
    align-items: center;
    transition: all 1s ease;
-   box-shadow: 0 0.5rem 0.2rem black;
+   border: 0.2rem solid #3a3939;
+   box-shadow: 0.5rem 0.5rem 0 0 #3a3939;
 }
 
 .todo li {
@@ -143,7 +144,9 @@ form input {
    margin: 1rem;
    position: relative;
    overflow: hidden;
-   box-shadow: 0 0.5rem 0.2rem black;
+   border: 0.2rem solid #3a3939;
+
+   box-shadow: 0.5rem 0.5rem 0 0 rgb(41, 41, 41);
 
 }
 
@@ -180,13 +183,16 @@ form input {
       font-size: 2rem;
       border: none;
       background: white;
-      width: 25%
+      width: 25%;
+      border: 0.2rem solid #3a3939;
+      border-right: 0;
    }
 
    .todo-button {
       margin: 0rem;
-      box-shadow: 0 0.5rem 0.2rem black;
-
+      border: 0.2rem solid #3a3939;
+      border-left: 0;
+      box-shadow: 0.5rem 0.5rem 0 0 #3a3939;
    }
 
    .todo-select {
