@@ -46,7 +46,8 @@ form input {
    font-size: 2rem;
    border: none;
    background: white;
-   width: 90%
+   width: 90%;
+   box-shadow: 0 0.5rem 0.2rem black;
 }
 
 .todo-button {
@@ -82,6 +83,7 @@ form input {
    justify-content: space-between;
    align-items: center;
    transition: all 1s ease;
+   box-shadow: 0 0.5rem 0.2rem black;
 }
 
 .todo li {
@@ -134,13 +136,15 @@ form input {
    cursor: pointer;
    width: 11rem;
    padding: 0.5rem;
-   font-size: 1rem
+   font-size: 1rem;
 }
 
 .select {
    margin: 1rem;
    position: relative;
    overflow: hidden;
+   box-shadow: 0 0.5rem 0.2rem black;
+
 }
 
 .select::after {
@@ -152,6 +156,7 @@ form input {
    color: #000000;
    cursor: pointer;
    pointer-events: none;
+
 }
 
 /* * IPAD */
@@ -180,6 +185,8 @@ form input {
 
    .todo-button {
       margin: 0rem;
+      box-shadow: 0 0.5rem 0.2rem black;
+
    }
 
    .todo-select {
