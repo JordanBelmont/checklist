@@ -17,4 +17,28 @@ body {
    background-attachment: fixed;
    font-family: 'Poppins', sans-serif;
    min-height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 5rem;
+   margin: 5.5rem;
+   font-family: 'coffee&tea', sans-serif;
+   letter-spacing: 1px;
+   color: rgb(67, 67, 67);
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 2rem;
+   padding: 2rem;
+   align-items: center;
 }
