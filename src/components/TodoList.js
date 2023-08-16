@@ -1,10 +1,15 @@
 import React from 'react';
+// Import Components
+import Todo from './Todo';
 
+// Props
 const TodoList = () => {
 
    return (
       <div className="todo-container">
          <ul className="todo-list">
+            <Todo
+            />
          </ul>
       </div>
    );
