@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Props
-const Form = ({ setInputText, todos, setTodos, inputText }) => {
+const Form = ({ setInputText, todos, setTodos, setStatus, inputText }) => {
 
    // Gets the value of the input text as it's being typed
    const inputTextHandler = (e) => {
@@ -19,6 +19,11 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
          }
       ]);
       setInputText(""); // resets input bar
+   }
+
+   // Logs the status of a value as completed or uncompleted
+   const statusHandler = (e) => {
+      setStatus(e.target.value);
    }
 
 
@@ -42,6 +47,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
             <select
                name="todos"
                className="todo-select"
+               onChange={statusHandler}
             >
                <option value="all">All</option>
                <option value="completed">Completed</option>

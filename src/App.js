@@ -10,6 +10,7 @@ function App() {
    // States
    const [inputText, setInputText] = useState("");
    const [todos, setTodos] = useState([]);
+   const [status, setStatus] = useState("all");
 
    return (
       <div className="App">
@@ -17,6 +18,7 @@ function App() {
             <h1>Checklist</h1>
          </header>
          <Form
+            setStatus={setStatus}
             setInputText={setInputText}
             todos={todos}
             setTodos={setTodos}
