@@ -3,7 +3,7 @@ import React from 'react';
 
 const Form = () => {
    return (
-      <form className="todo-form">
+      <form className="form">
          <input
             type="text"
             className="todo-input"
