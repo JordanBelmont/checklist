@@ -1,12 +1,18 @@
 import React from 'react';
 
+// Props
+const Form = ({ setInputText }) => {
 
-const Form = () => {
+   const inputTextHandler = (e) => {
+      setInputText(e.target.value);
+   };
+
    return (
       <form className="form">
          <input
             type="text"
             className="todo-input"
+            onChange={inputTextHandler}
          />
          <button
             type="submit"
