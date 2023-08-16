@@ -6,10 +6,10 @@ const Todo = () => {
       <div className="todo">
          <li className='todo-item'>item</li>
          <button className="complete-btn">
-            <i className="fas fa-laugh"></i>
+            <i className="fa-solid fa-check"></i>
          </button>
          <button className="delete-btn">
-            <i className="fas fa-trash"></i>
+            <i className="fa-solid fa-trash"></i>
          </button>
       </div>
    );
