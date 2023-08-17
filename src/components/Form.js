@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Props
-const Form = ({ setInputText, todos, setTodos, setStatus, inputText }) => {
+const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
    // Gets the value of the input text as it's being typed
    const inputTextHandler = (e) => {
@@ -25,8 +25,6 @@ const Form = ({ setInputText, todos, setTodos, setStatus, inputText }) => {
    const statusHandler = (e) => {
       setStatus(e.target.value);
    }
-
-
 
    return (
       <form className="form">

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Props
 const Todo = ({ text, todo, todos, setTodos }) => {
 
    const deleteHandler = () => {
@@ -19,7 +20,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
 
    return (
       <div className="todo">
-         <li classNameclassName={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
+         <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
          <button className="complete-btn" onClick={completeHandler}>
             <i className="fa-solid fa-check"></i>
          </button>
